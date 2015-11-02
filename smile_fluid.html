@@ -2,92 +2,92 @@
 <html>
 <head>
     <style>
-	#wrapper {
-            
-            width:300px;
-position: relative;
-    resize: horizontal;
-    border: 2px solid #ebebeb;
-    overflow: auto;
-    padding: 20px;
-    margin: calc(50vh - 200px);
-    border-radius: 8px;
+#wrapper {
+  width: 200px;
+  position: relative;
+  resize: horizontal;
+  border: 2px solid #ebebeb;
+  overflow: auto;
+  padding: 8px;
+  margin: calc(50vh - 120px) auto;
+  border-radius: 8px;
+}
 
-			
-        }
-			#wrapper:before {
-            content:' ';
-            width:1px;
-            position:relative;
-			display:block;
-            padding-top: 100%;
-	}		
-	
-        #container {
-    height: 85%;
-    width: 85%;
-    position: absolute;
-    border: 1px;
-    overflow: auto;
-    padding: 10px;
-    top: calc(50% - 47.5%);
-        }
-        .smile {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: yellow;
-            box-shadow: black 0px 0px 8px 3px;
-        }
+#wrapper:before {
+  content: ' ';
+  width: 1px;
+  position: relative;
+  display: block;
+  padding-top: 100%;
+}
 
-        .smile::before {
-            width: 7.5%;
-            height: 4.5%;
-            border-radius: 50%;
-            background: black;
-            position: absolute;
-            top: 32.5%;
-            left: 25%;
-            content: '';
-            transform: rotateZ(90deg);
-        }
+#container {
+  height: 85%;
+  width: 85%;
+  position: absolute;
+  border: 1px;
+  overflow: auto;
+  padding: 10px;
+  top: calc(50% - 47.5%);
+}
 
-        .smile::after {
-            width: 7.5%;
-            height: 4.5%;
-            border-radius:50%;
-            background: black;
-            position: absolute;
-            top: 32.5%;
-            left: 68%;
-            content: '';
-            -webkit-transform: rotateZ(90deg);
-        }
+.smile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: yellow;
+  box-shadow: black 0px 0px 8px 3px;
+}
 
-        .smile .lips {
-            width: 75%;
-            height: 75%;
-            border-radius: 50%;
-            /* background: black; */
-            position: absolute;
-            z-index: 1;
-            border: solid 5px black;
-            border-top-color: transparent;
-            border-left-color: transparent;
-            border-bottom-color: transparent;
-            transform: rotateZ(90deg);
-            top: -4.5%;
-            left: 12.25%;
-        }
+.smile::before {
+  width: 7.5%;
+  height: 4.5%;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 32.5%;
+  left: 25%;
+  content: '';
+  transform: rotateZ(90deg);
+}
+
+.smile::after {
+  width: 7.5%;
+  height: 4.5%;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 32.5%;
+  left: 68%;
+  content: '';
+  -webkit-transform: rotateZ(90deg);
+}
+
+.smile .lips {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  /* background: black; */
+  
+  position: absolute;
+  z-index: 1;
+  border: solid 5px black;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotateZ(90deg);
+  top: -4.5%;
+  left: 12.25%;
+}
     </style>
 </head>
 <body>
-<div id='wrapper' >
-<div id="container">
+<div id='wrapper'>
+  <div id="container">
     <div class="smile">
-        <div class="lips"></div>
+      <div class="lips"></div>
     </div>
-</div>
+  </div>
 </div>
 </body>
 </html>
